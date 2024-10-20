@@ -1,0 +1,308 @@
+
+
+/* From Uiverse.io by juanpabl0svn */ 
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    --background: #20262c;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: 0.5s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #ececd9, -4px 1px 4px 0px #dadada;
+    background: var(--background);
+    transition: 0.5s;
+  }
+  
+  .decoration {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 2px;
+    border-radius: 50%;
+    right: 20%;
+    top: 15%;
+    background: #e5f041e6;
+    backdrop-filter: blur(10px);
+    transition: all 0.5s;
+    box-shadow: -7px 10px 0 #e5f041e6, 8px 15px 0 #e5f041e6, -17px 1px 0 #e5f041e6,
+      -20px 10px 0 #e5f041e6, -7px 23px 0 #e5f041e6, -15px 25px 0 #e5f041e6;
+  }
+  
+  input:checked ~ .decoration {
+    transform: translateX(-20px);
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: -12px 0 0 white, -6px 0 0 1.6px white, 5px 15px 0 1px white,
+      1px 17px 0 white, 10px 17px 0 white;
+  }
+  
+  input:checked + .slider {
+    background-color: #5494de;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #efdf2b, 0 0 10px 0px #efdf2b;
+  }
+  
+
+.chose{
+    padding-top: 100px;
+    text-align: center;
+}
+.chose h1{
+    font-family:Arial, Helvetica, sans-serif;
+padding-bottom: 80px;
+}
+.container h1 span:hover{
+    color: brown;
+    cursor:wait;
+}
+
+.chose h1 span:hover{
+    color: brown;
+    cursor:wait;
+}
+
+.boxcon{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.boxcon .boxitem{
+    width: 60%;
+    height: 700px;
+    background-image: url(../img/2022_09_29_12_45_IMG_6398.JPG);
+    background-size: 100% 100%;
+    border: 2px solid #006eae;
+    border-radius: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+i{
+    font-size: 30px;
+    color: rgb(6, 0, 183);
+    padding: 20px;
+    cursor: pointer;
+}
+
+
+#close{
+    position: absolute ;
+    top: 10px;
+    right: 20px;
+}
+.sp {
+    opacity: 0;
+}
+.sp .ag{
+    width: 40px;
+    height: 40px;
+    border: 20ox solid black;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.sp .ag a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+a{
+  
+        text-decoration: none;
+        color:black
+}
+.boxcount{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+.boxcount p{
+    display: none;
+}
+
+
+.darrk{
+    background-color: black;
+color: white;}
+
+.darrk a{
+    
+color: white;}
+
+.img{
+    width: 100%;
+    height: 30vh;
+}
+.rowq{
+    background-image: url(../img/9393.JPG);
+    background-attachment: fixed;
+    background-size:contain;
+    background-size: 100% 100%;
+    padding-top: 144px;
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 180px;
+}
+
+.rowq img{
+        width: 200px;
+        border-radius: 30%;
+        
+}
+
+footer{
+    width: 100%;
+    height: 5px;
+    background-color:#006eae;
+    margin-top: 55px;
+}
+
+.row img{
+    border: 3px solid #006eae;
+    border-radius: 30px;   
+}
+
+#h:hover{
+    color: brown;
+    cursor:wait;
+}
+
+
+#form{
+
+border-radius: 30px;
+padding-top: 150px;
+}
+
+#p-h2{
+    margin-top: 200px;
+}
+
+@media(max-width:950px){
+#p-h1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+}
+@media(max-width:760px){
+    #p-h1 {
+        font-size: 17px;
+        
+    }
+    h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .boxcount{
+        height:300px;
+    }
+    
+.dark{
+    height: 300px;
+}
+
+.boxcon .boxitem{
+    width: 85%;
+    height: 600px;
+}
+
+.rowq img{
+    width: 168px;
+
+}
+h3{
+    font-weight: bold;
+}
+#amm{
+    font-size: 20px;
+}
+#pr{
+    font-size: 20px;
+}
+}
+@media(max-width:650px){
+    .boxcount{
+        height:390px;
+    }
+    
+.dark{
+    height: 390px;
+}
+#pr{
+    font-size: 15px;
+    font-weight: 500;
+}
+.rowq img{
+    width: 128px;
+
+}
+.boxcon .boxitem{
+    width: 90%;
+    height: 450px;
+}
+}
+
+@media(max-width:500px){
+    .rowq img{
+        width: 100px;
+    
+    }
+}
+
+
+
